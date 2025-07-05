@@ -19,7 +19,7 @@ body{
     background: var(--primary-color);
 }
 main{
-    background: var(--secondary-color);
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
     border-radius: 20px;
     width: 400px;
     height: auto;
@@ -27,6 +27,17 @@ main{
     justify-content: center;
     padding: 2rem;
 
+    .erro{
+        display: none;
+        color: #fff;
+        font-size: 1.2rem;
+        font-weight: 500;
+        text-align: center;
+        margin-top: 1rem;
+    }
+}
+section{
+    display: none;
 }
 article.search-box{
     display: flex;
@@ -63,17 +74,17 @@ article.weather-info{
     margin-top: 2rem;
 
     .weather-icon i {
-        font-size: 7rem;
+        font-size: 6rem;
         color: #fff;
     }
     .weather-dg p {
-        font-size: 8rem;
+        font-size: 6rem;
         color: #fff;
         font-weight: 700;
-        margin: 0;
+        margin: 1rem;
     }
     .city-name p {
-        font-size: 4rem;
+        font-size: 2rem;
         color: #fff;
         font-weight: 700;
         margin: 0;
@@ -97,8 +108,8 @@ article.weather-discription {
         justify-content: center;
         align-items: center;
         div.humidity-icon i{
-            font-size: 3rem;
-            /* margin-right: .5rem; */
+            font-size: 2rem;
+            margin-right: 1rem;
 
         }
         div.humidity-value-box{
@@ -122,9 +133,9 @@ article.weather-discription {
         align-items: center;
 
         div.speed-icon i{
-            font-size: 3rem;
+            font-size: 2rem;
             
-            /* margin-right: .5rem; */
+            margin-right: 1rem;
         }
         div.speed-value-box{
             display: flex;
@@ -132,7 +143,7 @@ article.weather-discription {
             align-items: center;
 
         p.speed-value{
-            font-size: 2rem;
+            font-size: 1.5rem;
             font-weight: 500;
         }
         p{
